@@ -1,48 +1,39 @@
-import type { MetaFunction } from "@remix-run/node";
-
-export const meta: MetaFunction = () => {
-  return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
-  ];
-};
-
 export default function Index() {
   return (
-    <div className="font-sans p-4">
-      <h1 className="text-3xl">Welcome to Remix</h1>
-      <ul className="list-disc mt-4 pl-6 space-y-2">
-        <li>
+    <div
+      className="mx-auto max-w-[600px] md:px-2 px-4 antialiased font-mono"
+    >
+      <main>
+        <h1 className="mt-20 block font-bold text-4xl dark:text-white">Luthfulahi Oseni</h1>
+        <h2 className="mb-10 dark:text-white">Sotware engineer</h2>
+        <p className="dark:text-gray-300">
+          Hi 👋🏽, I&apos;m Luthfulahi Oseni, a software engineer at Turing Inc. I&apos;m passionate about building next-gen AI-powered, human-led talent services. When I&apos;m not crafting amazing tools for Turing&apos;s talent cloud, you&apos;ll find me exploring fascinating web3 projects.
+        </p>
+        <p className="mt-4 dark:text-gray-300">
+          I recently started documenting my career insights and experiences. Curious🤔??? Check out my blog{" "}
           <a
-            className="text-blue-700 underline visited:text-purple-900"
+            className="underline visited:text-purple-900 dark:visited:text-[#E5D2F9]"
             target="_blank"
-            href="https://remix.run/start/quickstart"
+            href="https://luthfulahi.hashnode.dev/"
             rel="noreferrer"
           >
-            5m Quick Start
+            here
           </a>
-        </li>
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
+          .
+        </p>
+
+        <p className="mt-4 dark:text-gray-300">
+          You can find me on LinkedIn <a
+            className="underline visited:text-purple-900 dark:visited:text-[#E5D2F9]"
             target="_blank"
-            href="https://remix.run/start/tutorial"
+            href="https://www.linkedin.com/in/luthfulahi/"
             rel="noreferrer"
           >
-            30m Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/docs"
-            rel="noreferrer"
-          >
-            Remix Docs
-          </a>
-        </li>
-      </ul>
+            here
+          </a>.
+        </p>
+      </main>
     </div>
+
   );
 }
