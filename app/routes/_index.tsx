@@ -23,6 +23,19 @@ export default function Index() {
         </p>
 
         <p className="mt-4 dark:text-gray-300">
+          Here are some of the interesting web3 products I am currently working on.
+
+          <ul className="mt-4 list-disc list-inside">
+            <li className="underline">
+              <a href="https://www.blockradar.co/" target="_blank" rel="noreferrer">Blockradar</a>
+            </li>
+            <li className="underline">
+              <a href="https://www.blocasset.com/" target="_blank" rel="noreferrer">Blocasset</a>
+            </li>
+          </ul>
+        </p>
+
+        <p className="mt-4 dark:text-gray-300">
           You can find me on LinkedIn <a
             className="underline visited:text-purple-900 dark:visited:text-[#E5D2F9]"
             target="_blank"
