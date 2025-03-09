@@ -301,7 +301,6 @@ export function TextAnimate({
   children,
   delay = 0,
   duration = 0.3,
-  variants,
   className,
   segmentClassName,
   as: Component = "p",
@@ -387,7 +386,7 @@ export function TextAnimate({
             className={cn(
               by === "line" ? "block" : "inline-block whitespace-pre",
               by === "character" && "",
-              segmentClassName,
+              segmentClassName
             )}
           >
             {segment}
