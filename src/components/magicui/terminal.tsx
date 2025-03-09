@@ -100,8 +100,8 @@ export const Terminal = ({ children, className }: TerminalProps) => {
   return (
     <div
       className={cn(
-        "z-0 h-full max-h-[400px] w-full max-w-lg rounded-xl border border-border bg-background",
-        className,
+        "z-0 w-full max-w-5xl rounded-xl border border-border bg-background",
+        className
       )}
     >
       <div className="flex flex-col gap-y-2 border-b border-border p-4">

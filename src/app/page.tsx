@@ -1,24 +1,26 @@
-import { MorphingText } from "@/components/magicui/morphing-text";
+"use client";
 
-const texts = [
-  "Hello", // English
-  "مرحبا", // Arabic
-  "Bonjour", // French
-  "Hallo", // German
-  "Bawo", // Yoruba
-  "Hola", // Spanish
-  "Ciao", // Italian
-  "你好", // Chinese
-  "नमस्ते", // Hindi
-  "Olá", // Portuguese
-];
+import { useEffect, useState } from "react";
+import Loader from "@/components/loader";
+import PortfolioIntro from "@/components/PortfolioIntro";
 
 export default function Home() {
-  return (
-    <div className="flex items-center justify-center min-h-screen">
-      <main className="flex flex-col w-full">
-        <MorphingText texts={texts} />
-      </main>
-    </div>
-  );
+  const [showLoader, setShowLoader] = useState(true);
+
+  useEffect(() => {
+    // Calculate total animation time: (morphTime + cooldownTime) * number of texts
+    const totalAnimationTime = (1.5 + 0.5) * 5 * 1000; // Convert to milliseconds
+
+    const timer = setTimeout(() => {
+      setShowLoader(false);
+    }, totalAnimationTime);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (showLoader) {
+    return <Loader />;
+  }
+
+  return <PortfolioIntro />;
 }
