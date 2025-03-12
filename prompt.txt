@@ -1,0 +1,19 @@
+Your task is to create a web based AI powered portfolio website for a developer.
+
+Traditional portfolion are static and don't allow for much interaction, many times the information you put there quickly gets outdated and even when recruiters or potential employers want to reach out, they can't easily find the information the need.
+
+The website should allow for a chat where recruiters ask questions about the developer, event paste a job dewscription and ask questions like "Does this developer have experience with X?" or "Does this developer have experience with Y?" or "What would be the unique value this developer bring to my team?" even other devs or junior devs can ask questions like "Can I choose this person as my mentor?" "Why shouldn't I work with this developer for future project" 
+
+So here the goal is to feed the AI with a lot of information about the developer, different resume versions, recommendation from previous managers, achivevements, articles and so muc more, however your focus right now is to build an intuitve and nice UI with interactive elements for this portfolio, I am considering a not so common UI like the one for chatGPT and other AI chatbots, think of an interface that feels modern, interactive, out of the box, a portoflio and at the same time easy to use and navigate.
+
+The website should be responsive and mobile friendly, you should consider our responses are give, user might ask for comparison a table, a diagram and couple of things related to the developer the Ui should be able to handle that and also informa the backend on how to return the AI response, ideally it should be a versatile UI that can handle different kind of questions and different kind of responses.
+
+
+Remember the goal is to make the developer look good, and to make the user experience as smooth as possible, the UI should be easy to use and navigate, and it should be a pleasure to use.
+
+In terms of technology use nextjs, tailwindcss, framer-motion for animation and interactivity, for now focus fully on the frontend part, let's get the UI and the interactions right before we add any backend/processing related features.
+
+For now I should see on the UI how a sample question and answer would look like I should be able to type a question and see the answer, I should be able to see a diagram or a table if the answer is related to that.
+
+
+
