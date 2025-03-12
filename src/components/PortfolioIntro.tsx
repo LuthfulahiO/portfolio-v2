@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { PulsatingButton } from "./magicui/pulsating-button";
+import Link from "next/link";
 
 const portfolioAscii = `
 ██      ██    ██ ████████ ██   ██ ███████ ██    ██ ██       █████  ██   ██ ██ 
@@ -114,7 +115,9 @@ const PortfolioIntro = () => {
               transition={{ delay: 1.7, duration: 0.5 }}
               className="my-6"
             >
-              <PulsatingButton>Start the Conversation</PulsatingButton>
+              <Link href="/chat">
+                <PulsatingButton>Start the Conversation</PulsatingButton>
+              </Link>
             </motion.div>
           </motion.div>
         </div>

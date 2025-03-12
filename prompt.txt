@@ -1,19 +1,52 @@
-Your task is to create a web based AI powered portfolio website for a developer.
+Create a comprehensive web-based AI-powered portfolio website that revolutionizes the traditional developer portfolio experience.
 
-Traditional portfolion are static and don't allow for much interaction, many times the information you put there quickly gets outdated and even when recruiters or potential employers want to reach out, they can't easily find the information the need.
+## PROBLEM STATEMENT
+Traditional portfolios are static and quickly become outdated. They often fail to provide the specific information recruiters need and lack meaningful interaction capabilities.
 
-The website should allow for a chat where recruiters ask questions about the developer, event paste a job dewscription and ask questions like "Does this developer have experience with X?" or "Does this developer have experience with Y?" or "What would be the unique value this developer bring to my team?" even other devs or junior devs can ask questions like "Can I choose this person as my mentor?" "Why shouldn't I work with this developer for future project" 
+## PROJECT VISION
+Design an intuitive, modern, and interactive portfolio website centered around an AI chat interface that allows:
+- Recruiters to ask direct questions about my skills and experience
+- Employers to paste job descriptions and get tailored compatibility analyses
+- Potential clients to explore my unique value propositions
+- Fellow developers to evaluate my potential as a mentor or collaborator
 
-So here the goal is to feed the AI with a lot of information about the developer, different resume versions, recommendation from previous managers, achivevements, articles and so muc more, however your focus right now is to build an intuitve and nice UI with interactive elements for this portfolio, I am considering a not so common UI like the one for chatGPT and other AI chatbots, think of an interface that feels modern, interactive, out of the box, a portoflio and at the same time easy to use and navigate.
+## CORE FEATURES
+1. **AI Chat Interface**
+   - Conversational UI that processes natural language queries
+   - Ability to understand and respond to complex questions about my experience
+   - Support for analyzing job descriptions to highlight relevant skills and experience
+   - Capability to generate comparative analyses (tables, charts) when requested
 
-The website should be responsive and mobile friendly, you should consider our responses are give, user might ask for comparison a table, a diagram and couple of things related to the developer the Ui should be able to handle that and also informa the backend on how to return the AI response, ideally it should be a versatile UI that can handle different kind of questions and different kind of responses.
+2. **Content & Training Data**
+   - Utilize all documents in public/training_data/ including:
+     * Multiple resume versions
+     * Recommendation letters from previous managers
+     * Project case studies and achievements
+     * Published articles and technical content
+   - Implement OpenAI API integration for processing these materials
 
+3. **User Experience Requirements**
+   - Modern, distinctive UI that stands apart from typical chatbot interfaces
+   - Responsive design that works flawlessly on all devices
+   - Intuitive navigation that guides users toward meaningful interactions
+   - Support for rich media responses (tables, diagrams, code snippets) based on query context
+   - Option to download standard resume for users who prefer traditional formats
+   - Feature to generate and download a customized resume based on the conversation
 
-Remember the goal is to make the developer look good, and to make the user experience as smooth as possible, the UI should be easy to use and navigate, and it should be a pleasure to use.
+4. **Implementation Details**
+   - Create a compelling intro page with call-to-action to start conversation
+   - Build a robust chat interface with appropriate loading states and response handling
+   - Implement backend API with OpenAI integration for processing queries
+   - Ensure the backend can fine-tune responses using all training materials
+   - Add resume download options (both standard and conversation-customized versions)
 
-In terms of technology use nextjs, tailwindcss, framer-motion for animation and interactivity, for now focus fully on the frontend part, let's get the UI and the interactions right before we add any backend/processing related features.
+## TECHNICAL CONSIDERATIONS
+- Implement proper handling of different response types (text, tables, comparisons, etc.)
+- Ensure the UI communicates response format needs to the backend
+- Build with modern web technologies that support interactive elements
+- Prioritize performance and response time for a smooth user experience
 
-For now I should see on the UI how a sample question and answer would look like I should be able to type a question and see the answer, I should be able to see a diagram or a table if the answer is related to that.
+## DESIGN PHILOSOPHY
+The interface should position me in the best possible light while providing genuine value to visitors. The experience should feel premium, thoughtful, and reflective of my skills and attention to detail.
 
-
-
+Proceed with implementing both the frontend UI components and the backend API integration with OpenAI, ensuring all features are fully functional and the experience is cohesive.

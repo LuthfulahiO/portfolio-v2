@@ -1,0 +1,570 @@
+# Main Resume 
+
+Luthfulahi Oseni
+Location: Dubai, UAE Email: luteeph@gmail.com
+Portfolio website: https://www.luthfulahi.tech
+SUMMARY
+Experienced Frontend Engineering Leader with 8+ years of experience leading cross-functional teams to build scalable web and
+mobile applications using Next.js, React, and modern frontend architectures. Proven track record in managing teams of 5+ engineers,
+optimizing performance (reducing API latency by 90%), and driving product success (generating $1M+ revenue pipeline). Combines
+hands-on technical expertise in front and backend technology with strong leadership in Agile project management (Jira), system
+design, and startup environments. Passionate about mentoring teams, architecting high-impact solutions, and delivering user-centric
+applications at scale.
+SKILLS
+●
+●
+●
+●
+●
+●
+●
+●
+Frontend: React, Next.js, Ethers.js, Web3.js, React Native, Typescript, Javascript, CSS, HTML5, TailwindCSS.
+Tooling: Redux, Webpack, Vite, Rspack, Babel, Monorepos
+Backend: Node.js, NestJS, GraphQL, Ethers.js, MySQL, PostgreSQL, BigQuery, Redis, TypeORM, Prisma, Drizzle
+Testing & Quality: Jest, Cypress, Playwright
+Data & Performance: Elastic Search, Grafana, Vector Databases
+Architecture: RESTful APIs, Microservices, System Design, Performance Optimization
+Accessibility: WCAG Guidelines, Assistive Technologies, Accessible Rich Internet Applications (ARIA), SEO Optimization
+Leadership: Team lead, Startup founding team, Strategic Planning, Project Management, Cross-functional Collaboration,
+Mentorship
+RELEVANT EXPERIENCE
+Lead Frontend Engineer, Blockradar.co May 2024 - Present
+●
+Led the team to architect and develop a non-custodial stablecoin wallet infrastructure dashboard using Next.js, React, and
+TypeScript, achieving $12M+ transaction volume.
+●
+Spearheaded frontend architecture for multi-chain wallet integrations, improving client onboarding speed by 40% through
+Next.js optimisation and intuitive UX.
+●
+Designed and implemented a crypto-powered subscription service, unlocking new revenue streams for Blockradar's
+customers.
+Software Engineer III, Turing Enterprises Inc - USA February 2022 - October 2024
+●
+Led a pod of 5 engineers in Agile workflows (Jira) to build a React component library, boosting development efficiency by
+35%.
+●
+Built an AI-powered matching tool that slashed developer vetting time from 1 week → 2 days, increasing job match rates to
+30% for a 100-person team.
+●
+Designed and built a high-performance, scalable API-as-a-service used across all Turing products, featuring robust
+authentication and monitoring systems.
+●
+Optimized the matching product API, reducing average response time from 15 seconds to 1.9 seconds, resulting in a 60%
+increase in team productivity.
+●
+Implemented comprehensive monitoring and logging systems using Google Cloud Platform, including Cloud Logging for
+application monitoring, BigQuery for large dataset analysis, and Kubernetes for application deployment and management.
+Senior Frontend Engineer, Partsimony Inc - NY , USA October 2021 - November 2023
+●
+Led architecture of Next.js micro-frontend infrastructure for manufacturer websites, improving scalability and enabling a
+$1M+ revenue pipeline from Partsimony 2.0, an AI/ML SaaS platform for supply chain optimization.
+●
+Boosted SEO performance by 30% via Next.js optimizations (SSR, metadata) and championed WCAG compliance through
+audits and team training.
+●
+Engineered high-performance features:
+○
+Real-time CAD file streaming and viewer, reducing client-side load times by 40%.
+○
+Fuzzy search and dataset virtualization for 10k+ records, enhancing UX for enterprise clients.
+●
+Built Stripe-powered global payments and automated testing (Playwright/Jest), cutting deployment errors and increasing
+our shipping velocity.
+●
+Scaled team processes: Introduced QA templates and Agile workflows, accelerating feature delivery and better feedback
+loop.
+Frontend Engineer, Menaget SPC - Manama, Bahrain December 2019 - February 2022
+●
+Worked with a 6-person team in developing new features for the Mnassa (Saudi) social media platform, doubling app
+performance and achieving 6000 daily active users.
+●
+Designed the application architecture for senderrand.com, a new startup, using React Native and XMPP .
+●
+Created a React Native design system to ensure uniform development across multiple applications.
+Frontend Engineer, Color Elephant - Porto, Portugal February 2021 - May 2021
+●
+Coordinated the development of the Zirkl app and fixed several existing bugs for multiple client web and mobile application
+projects impacting latency, startup speed, and the UX using React Native, React, Javascript, Typescript, and Airtable.
+Frontend Engineer, Cygnusspin - Ibadan, Nigeria July 2019 - February 2020
+●
+Built the front end of a white-label sports betting platform solution that processes the odds for over 1000 real-time events
+in 1 second using NuxtJs, Vue, Socket.io, and Real-time events processing.
+Frontend Engineer, Findthepro - Ibadan, Nigeria December 2018 - July 2019
+●
+Built an on-demand platform that connects 6K+ professionals to customers in need of professional services and collaborated
+with a 7-person team to create a real-time chat system with file sharing, voice notes, and video messaging capabilities using
+React, Bootstrap, and Socket.io
+Web Developer, Foodlocker - Ibadan, Nigeria December 2017 - November 2018
+●
+Collaborated with a team to develop and maintain key features of a farm-to-consumer e-commerce platform, enabling
+smallholder farmers to sell directly to buyers and improving accessibility to affordable food items.
+EDUCATION & CERTIFICATIONS
+●
+●
+National Diploma - Computer Science, The Polytechnic Ibadan - Ibadan, Nigeria
+Mobile Web Specialist (with focus on Accessibility), Udacity - Google Scholarship Program
+SELECT PROJECTS
+Blockradar
+●
+●
+I Built the entire frontend system for a web3 non-custodial stablecoin blockchain wallet infrastructure.
+Technologies: Web3, Nextjs, React, Typescript, TailwindCSS.
+Blocasset Profile
+●
+talents on-chain.
+I led the Frontend team for blocasset.com to develop a social application connecting builders, contributors, founders, and
+●
+Technologies: Web3, Nextjs, React, Typescript, WalletConnect, Privy, Farcaster protocol.
+Pave Motors
+●
+Created a marketing page and eCommerce platform that allows customers to easily order bikes from any part of the world
+using React, NextJS, TaiwindCSS, Sendgrid, and Stripe.
+●
+Developed an innovative blockchain feature that provides bike owners with a crypto token and BLE technology that allows
+users to unlock bikes from their phones using Flutter.
+●
+Drove the resolution of long-term UI bugs, enhanced the user experience for a bike remote unlocking feature, and
+implemented a feature to display current user location and weather.
+●
+Researched industry-specific keywords, introduced Facebook pixels for tracking, implemented server-side rendering,
+championed SEO best practices, and provided recommendations to optimize the user experience.
+COMMUNITY ENGAGEMENT
+●
+●
+●
+Organizing Volunteer, ETH Dubai 2022
+Lead Organizer, Google Developer Group Ibadan 2019 - 2022
+Speaker and Advocate for Web Accessibility - Created and presented public slide decks on implementing accessible web design
+
+-----
+
+
+#Old Resume 
+
+Luthfulahi Oseni
+Software Engineer
+ luteeph@gmail.com | Dubai, UAE.
+https://www.linkedin.com/in/luthfulahi
+https://github.com/LuthfulahiO
+PROFESSIONAL SUMMARY
+With six years of experience as a Software Engineer, specializing in full-stack development with a focus on frontend, I have a
+proven track record of delivering scalable web and mobile applications. In my current role at Turing, I have spearheaded new
+product initiatives, from conceptualizing engineering specifications to executing pixel-perfect frontend and robust backend
+APIs. My role encompasses leading the design of system architecture, end-to-end product development, rollout strategies,
+customer integration, and maintenance, all while collaborating with stakeholders and product leaders to surpass business
+objectives and key results.
+TECH STACK
+Front End React, Next.js, React Native, T ypescript, Javascript, CSS, HTML5, T ailwindCSS
+Back End Node.js, Nest.js
+Data store/ORM MySQL, PostgreSQL, BigQuery, Redis, T ypeORM, Prisma, Drizzle.
+T oolings GCP , Jenkins, Docker, Jest, Cypress, Playwright, Elastic Search, Grafana.
+EXPERIENCE
+Software Engineer III (Core T eam) | Turing Enterprises Inc | USA https://www.turing.com/
+February 2022 – Present
+T echnologies: React, T ypescript, NodeJs, NestJS, gRPC, MySQL, T ypeOrm, Storybook.
+● At Turing, I led the design of system architecture and end-to-end product development, overseeing rollout
+strategies, customer integration, and ongoing maintenance.
+● Worked on a component library that powered the suites of products used in the company.
+● Built an intelligent matching tool that helped the team vet thousands of devs much faster and efficiently, this led
+to a 30% increase in the company match rate in the first month of launch.
+● Designed and built a new microservice that powered the developer-related information at Turing - worked at a
+full-stack capacity including system architecture, monitoring and logging, this service has ensured 100% accuracy
+in developer information across the company products.
+● Wrote multiple test cases to ensure full coverage of the codebase unit and e2e test with Jest and Cypress.● Wrote multiple test cases to ensure full coverage of the codebase unit and e2e test with Jest and Cypress.
+● Collaborated with stakeholders, leadership, and cross-functional teams to achieve the company’s KPI
+month-on-month.
+Senior Frontend Engineer | Partsimony Inc | NY , USA https://www.partsimony.com/
+October 2021 – November 2023
+T echnologies: React, T ypescript, Nextjs, T ailwindCSS, tRPC, GraphQL, PostgreSQL, Drizzle.
+● Built and launched Partsimony 2.0 which led to a $1m increase in the revenue pipeline for the company.
+● Built a robust payment system that allows users to receive and pay from anywhere in the world with a card or
+bank account.
+● Built a robust Excel parsing tool
+● Built a communication tool with real-time messaging functionality, file sharing, multi-views, and mentions.
+● Worked on a CAD viewer that lets users view their engineering design on the web.
+● Designed new user flow/experience for new product initiates.
+● Created new team cultures and processes like developing a new QA template to ensure the team ships quality
+products.
+React Native Engineer | Menaget SPC | Manama, Bahrain https://www.menaget.com
+December 2019 – February 2022
+T echnologies: React, React Native, JavaScript, T ypeScript, XMPP , NPM, SQLite, Docker, VueJS.
+● Led a team of engineers on one of the external products and worked majorly to drive adoption and increase user
+retention, after a few months, we were able to make the app x2 faster than before and also have 6000 daily active
+users on the platform.
+● Got invited by the CEO to become a founding engineer on his new startup idea in Dubai
+https://senderrand.com where I worked on the entire application architecture for the mobile engineering team
+and also built an MVP for the idea.
+● Built a react native design system to facilitate a uniform development process for all our applications.
+React Native Engineer | Color Elephant | Porto, Portugal https://colorelephant.com/
+February 2021 – May 2021
+T echnologies: React Native, React, Javascript, T ypescript, Airtable.
+● Worked on multiple client projects both for web and mobile applications
+● In my first month of joining, I was able to help complete three major projects and fix several existing bugs which
+helped the company retain a nice relationship with the client.
+Frontend Engineer | Cygnusspin | Ibadan, Nigeria https://cygnusspin.com/projects/sportsbet/
+July 2019 – February 2020
+T echnologies: NuxtJs, Vue, Socket.io, Real-time events processing.
+● Built the first white-label sports betting platform solution that processes over 1000 real-time events odds in a
+second.
+Frontend Engineer | Findthepro (Defunct) | Ibadan, Nigeria Dec 2018 – July 2019
+T echnologies: React, Bootstrap, Socket.io.
+● Built an on-demand platform that connects professionals to customers who need certain services.
+● Built a real-time chat system with file sharing, voice notes and video messaging capability.
+PROJECTS
+Pave Website - https://pavemotors.com/
+Skills: React, NextJS, T aiwindCSS, Sendgrid, Stripe.
+- I was hired as an independent contractor to build the current marketing page and also an e-commerce platform
+where customers could order bikes from any part of the world. I also implemented best practices for SEO and
+advised on the best user experience.
+Penalogue App - https://penalogue.com/
+Skills: React Native, Expo, Reanimated.
+- Built a mobile application for taking down written and audio poems, built for creators in all workspaces of life, is
+currently in beta testing.
+Logistiks App - https://logistiks.com.ng/
+Skills: React Native, Expo, Reanimated, Payments Integration.
+- Built a mobile application that allows users to choose between various delivery companies to help carry out their
+tasks, based on ratings, prices and proximity.
+EDUCATION
+NATIONAL DIPLOMA | The Polytechnic Ibadan | Ibadan, Nigeria
+2016 – 2018 - Computer Science.
+Mobile Web Specialist | Udacity
+2018
+ADDITIONAL ACTIVITIES
+Organizing Volunteer at ETH Dubai | Dubai, UAE Mentor for Frontend Track | Ingenii Fellowship | Nigeria Lead Organizer Google Developer Group Ibadan 2022
+2022 - Present
+2019 - 2022
+
+
+------
+
+
+# Partsimony June Performance Evaluation
+
+June 2022 - Performance Evaluation
+Team Member Name: Luthfulahi Oseni
+Position/Title: Front End Engineer
+Supervisor Name: Rich Mokuolu and Roland Mokuolu
+Department: Technology
+Hire Date: September 29, 2021
+Date of Evaluation Evaluation Period
+June 28, 2022 From: September 29, 2021 To: June 27, 2022
+Key Responsibilities
+Implementation of front-end user experience/interactions of the Partsimony application
+Collaborating with back-end and infrastructure team members
+Collaborating with the management team on user experience and interactions to address customer needs
+Clean documentation
+June 2022 - Performance Evaluation 1
+Accomplishments
+Working hard to enable us to launch Partsimony 2.0
+Excel quoting implementation
+Stripe onboarding implementation
+Dashboard views
+Connections pages
+Events/notifications pages
+RFP Ranking
+Settings pages
+Strengths
+Pursuit of excellence in work quality
+Innate curiosity—evaluating the logic behind proposed solutions and best practices
+Collaborative team player — providing support on urgent tasks when a team member is swamped
+Building up others around you
+Improving team culture & processes (e.g. #kudos channel, QA template, etc.)
+Taking initiative in proactively resolving problems
+High EQ (Emotional Intelligence)
+June 2022 - Performance Evaluation 2
+Areas for Improvement
+Increasing the pace of output—we understand this could be due to the nature of roadblocks encountered while
+working with excel files
+Urgency on addressing roadblocks
+Utilizing GitLab & Notion to build out Engineering Wiki
+Job Specific Competencies
+Name Rating Notes
+Front-end engineering 👍 Meets Expectations
+Collaborating with back-end and
+infrastructure team members
+💪 Exceeds Expectations
+team members Collaborating with management
+💪 Exceeds Expectations Clean documentation🎛 Needs Improvement Good job on front-end engineering. Increasing the quality of output
+and optimizing for the best front-end infrastructure will result in an
+exceptional rating.
+Great collaborative relationship with members of the back-end and
+infrastructure team. In addition to your fellow front-end engineering
+team member.
+Great collaborative relationship with members of the management
+team.
+Utilizing GitLab & Notion to build out Engineering Wiki.
+June 2022 - Performance Evaluation 3
+Core Competencies
+Name Rating Notes
+Problem Solving 👍 Meets Expectations
+Decision Making 👍 Meets Expectations Communication 💪 Exceeds Expectations Quality / Attention
+to Detail
+👍 Meets Expectations
+Teamwork /
+Collaboration
+💪 Exceeds Expectations Output 👍 Meets Expectations
+💪 Exceeds Expectations Good critical thinking mindset to identify potential solutions to problems. Highlighting
+how a potential solution will lead to less operational/infrastructure complexity but
+more powerful outcomes will lead to an exceptional rating.
+Discussing more of the pros/cons when evaluating a decision and accounting for
+additional perspectives in decision-making will lead to an exceptional rating.
+You have great overall communication skills. Providing more clean documentation of
+roadblocks and implemented solutions will result in an exceptional rating.
+Testing relevant tasks in the dev environment prior to updating a task as “QA Ready”
+in Linear should help increase quality and highlight details that may be unique to the
+dev environment vs. the local environment. Implementing unit tests will result in an
+exceptional rating.
+Your approach to working as a team fosters a collaborative and enjoyable work
+environment.
+Dealing with bugs has impacted the pace of output on the front-end. However, new
+improvements being implemented should help lead to an exceptional output in the
+near future.
+Great job taking initiative and vocalizing how we can be better as a team.
+Initiative Customer
+Orientation 💪 Exceeds Expectations Focused on providing a delightful user experience.
+June 2022 - Performance Evaluation 4
+Name Rating Notes
+Engagement 👑 Exceptional Dedication to revolutionizing the way physical products are made to create a better
+future.
+Management Competencies
+Name Rating Notes
+Stewardship /
+Resource
+Management
+💪 Exceeds Expectations
+Great job on striving to implement the best culture and processes at
+Partsimony. Taking on more initiatives to improve the team’s performance will
+lead to an exceptional rating.
+Strategic planning 👍 Meets Expectations
+Increased display of ability to think through potential optimization considerations
+especially as it relates to front-end infrastructure will lead to an exceptional
+rating.
+Leadership 👍 Meets Expectations
+Embrace being a leader in the team and driving tasks forward. Taking more
+oversight of team members’ code quality & output would lead to an exceptional
+rating.
+Resilience 💪 Exceeds Expectations Worked hard to get us to launch the new Partsimony 2.0 platform.
+Overall Performance: Meets Expectations 👍
+
+----
+
+# Turing Performance Review and achievements
+
+Review from Turing
+2022 review
+●
+● Luthfulahi Oseni made an impact to support Turing’s growth by delivering Bulk
+Buy initiative in 2022 Q2, which improved overall fulfillment of bulk jobs and saw
+~20% more jobs fulfilled QoQ in 2022 Q3 with continued incremental gains.
+● He consistently proved his ownership quality; not only built the UI components for
+pre-shortlist but took complete ownership of delivering FE & BE as a fullstack
+developer, fixed any last minute issues before demo etc.
+● He believes in executing fast with quality delivery and demonstrated it with pre
+shortlist, communication integration, complex filters in pre shortlist, etc.
+● He breaks down the mid-size project into milestones & shows progress towards
+achieving those milestones, while unblocking himself with guidance from leads.
+● He collaborates very effectively with other team members, cross-functional teams
+(comms, vetting) and stakeholders (QA, Product, Ops)
+● A strong team player, shows leadership skills and also effectively lead the pod as
+scrum master effectively.
+2023 review
+Domain Knowledge
+● Product 0-1 : Oseni built an engagement tracking product (about to go live)
+single-handedly with minimal guidance from leads. He followed all engineering
+best practices, such as understanding requirements clearly, building a solid
+engineering design, demoing the early product, and working closely with the QA
+team.
+● Product 1-10: Oseni already had a decent understanding of developer data at
+Turing and its integration with pre-shortlist. With developer service, he further
+sharpened this understanding to become a subject matter expert in this area and
+how it integrates across matching systems.
+Impact
+● Developer Service: Developer service is one of its kind at Turing and a pioneer
+project. It started with a mission of Unified DDP initiative but soon extended to
+support developer data across all matching and self-serve surfaces. Oseni not only
+extended the core functionalities of developer service to design batch API, but
+also integrated developer service to almost all the matching surfaces with
+extreme ownership. This has cut down engineering effort to half and also
+releasing new features almost every other day leading to execute fast goal at
+Turing.
+● Engagement Tracking: Oseni in-progress (dev done) initiative of engagement
+tracking is expected to kill two Slack channels and one sheet of tracking
+engagement feedback, improving the efficiency of fulfillment ops. This will be
+foundational to capture feedback through the product and share it with
+downstream teams to further impact.
+● Product Quality: Oseni moved unit test coverage of developer service from single
+digit to ~50% coverage and is on track to further improve it this quarter, laying the
+foundation for an automated release with no or very little manual intervention.
+● Skills API Latency: Skills API on DDP used to take ~9 seconds at spikes, which was
+reduced to ~2.5 seconds by doing significant optimizations to database queries
+fetching this data. This leads to a great customer experience on both matching
+and self-serve products.
+
+
+----
+
+# Reference letter from partsimony CEO 
+
+20th March, 2023
+Tech Nation,
+3 Finsbury Ave,
+London EC2M 2PA,
+United Kingdom.
+CONFIDENTIAL
+Dear Sir/Madam,
+For the attention of Tech Nation:
+This is in support of the application of Luthfulahi Oseni for the Tech Nation Exceptional Promise
+Status in the United Kingdom in the field of digital technology.
+I am Richard Mokuolu, the CEO and Co-founder of Partsimony. Partsimony is a software platform
+that enables organizations to build intelligent manufacturing supply chains that are more
+sustainable and resilient by unifying engineering and supply chain data. Over the last few years,
+Partsimony has been used by large enterprises and frontier OEMs across automotive, aerospace,
+robotics, and other segments.
+I have known the applicant for almost two years now. Having Luthfulahi join our team has further
+opened us to opportunities and some untapped areas into which the company can venture.
+Luthfulahi has a strong excellent spirit and innate curiosity that always shows in every project he
+has been a part of. Some of them include:
+• Excellence in software development and generating business impact: When
+Luthfulahi joined Partsimony, he helped in the launching of Partsimony 2.0, the second version
+by working on multiple critical features across the Partsimony platform. This increased the
+company's revenue pipeline by over $1M+ after launch. Among numerous crucial features,
+Luthfulahi was instrumental in building the robust and complex collaboration system for the
+Partsimony platform which enables organizations to collaborate with external partners across
+multiple product development cycles. Thus, enhancing speed and effectiveness of product
+development cycles.
+• Strong critical thinking and work ethic: Luthfulahi takes his personal development very
+seriously and is always pursuing excellence in his work quality. Luthfulahi possesses strong
+critical thinking skills with an innate curiosity and thirst for knowledge which drives him to
+seek new novel ways to address various complex problems. Luthfulahi thrives in complexity
+and is not intimidated by ambiguity while working under time sensitive tasks. He demonstrates
+a rigorous work ethic every time he is given a challenging task and always evaluates the logic
+behind every proposed solution – considering the best practice the team can go for while still
+moving fast and being a collaborative team player. When a team member is inundated,
+DocuSign Envelope ID: EE1A0E00-2B83-4785-A414-DAD2A3998908
+Luthfulahi often preemptively picks up their tasks and works on them – thus alleviating team
+stress and improving the team’s overall effectiveness.
+• Process excellence and enhancing team culture: Luthfulahi also possesses a keen
+mindset for process excellence which he leverages to enhance the team’s effectiveness and
+work culture. Luthfulahi was instrumental in significantly reducing product QA issues by
+creating QA templates. Luthfulahi developed a template that helped provide pertinent and
+tailored details which was used to expedite resolution of QA items. In addition, Luthfulahi took
+the initiative to proactively resolve QA issues. In regard to team culture, Luthfulahi also
+introduced a “kudos channel” where people that achieved a significant result through
+commitment and hard work in the company are appreciated. This was created to encourage
+teamwork within the company and has since meaningfully increased the morale and bond of
+team members.
+• Community building and mentorship: One of Luthfulahi’s many strengths is impacting
+the people around him to help grow their skillsets and technical abilities. At Partsimony,
+Luthfulahi is always interested in giving back through knowledge sharing seminars and
+collaborative meetings with his team members. Outside of Partsimony, Luthfulahi enjoys
+giving back to the community by organizing tech conferences in his local environment and
+volunteering. Even in his current role, he has volunteered at the Ethereum Conference in
+Dubai and organized two large developer conferences in Nigeria.
+In my years of working with various professionals, Luthfulahi exhibits attributes which very few
+possess. Luthfulahi is a unique jewel in the engineering field based on my more than ten years
+of experience in the field. Luthfulahi is extremely beneficial to us and our clients because of his
+capacity to assess multi-faceted problems – from business process goals to technical solutions to
+prevailing challenges. Luthfulahi’s demonstrated competencies of developing technologies for
+scale in a deeply thoughtful manner will be very beneficial in the UK's digital innovation sector.
+The skillsets he provides are crucial in building a thriving technological talent base which the
+overall economy stands to benefit. I am strongly convinced that Luthfulahi will be a valued
+contributor in any institution.
+I am happy to provide more information on the applicant if required.
+Thank you.
+Best regards,
+Richard Mokuolu
+CEO & Co-founder, Partsimony
+
+
+----
+
+# Personal Essay for School Applications
+
+Hult Business School Personal Essay
+I have been working as a software engineer for the past five years, successfully building
+and scaling global products. However, I have come to realize that I need to acquire
+more business skills to reach my full potential. Even though I have interesting ideas and
+problems to solve, I struggle to find the right business fit for them.
+Two years ago, I moved to the UAE to create a peer-to-peer errand solution for the
+expatriate population. I focused on building the best technology use case, but my team
+lacked the business acumen. At a pitch competition in Dubai, an investor asked about
+our revenue plan, leaving me embarrassed and realizing my shortcomings.
+Since then, I have shifted my focus to product development and gained some
+understanding of business management. T o address my knowledge gap, I want to
+pursue a business degree at Hult International Business School.
+After my diploma studies, I did not pursue an actual degree because the institutions
+available to me at that time were not designed for builders like me. Earlier in life, I had
+always wanted to be a builder, so I took an interest in software engineering. However,
+recently a colleague of mine announced that he was starting his MBA at Hult Business
+School. This was the first time I had heard of the school, and the phrase "The Business
+School for Those Made to Do" caught my attention. This phrase resonated well with me
+at the particular phase of my life when I saw it, which was the same time I realized I had
+a knowledge gap preventing me from "doing". Seeing a school specifically made for that
+made it a solid choice for me.
+I spent the next couple of days researching the school and found that everything about
+it seemed just right, from practical focused learning to career-oriented programs, and
+most importantly, an immersive learning experience that simulates real-life workspace. I
+concluded that pursuing an undergraduate degree at Hult was the right choice for me in
+advancing my career, which is why I have decided to apply.
+Learning software engineering through online courses was relatively easy, but I
+recognize the different nature of the business world. Watching YouTube videos and
+taking online courses without a degree won’t suffice. I noticed that top business leaders
+possess degrees or MBAs, which I currently need. This realization has motivated me to
+embrace the challenge of entering the corporate world. Going back to school was a
+difficult decision, but it is necessary for my plans. Studying here will provide me with
+global skills, network, experience and education.
+In summary, I am excited to take this step and overcome the challenges that come with
+it, as I strive to solve global problems and achieve my goals.
+
+----
+
+# Achievements
+
+Built high-volume fintech & crypto solutions: Led the frontend for **Blockradar’s non-custodial stablecoin wallet**, powering **$32M+ in onchain transactions** and improving multi-chain wallet onboarding speed by 80%.
+
+Led teams & scaled architectures: 8+ years of experience leading cross-functional teams (5+ engineers) to build scalable web and mobile applications, optimizing system performance, and driving business success.
+
+Drove high-impact revenue growth: Architected and led frontend development for Partsimony 2.0, enabling a $1M+ revenue pipeline for an AI/ML supply chain SaaS platform.
+
+Optimized system performance: Reduced API response times from **15s → 1.9s**, improving developer efficiency by 60% at Turing Enterprises.
+
+Mentored & led technical teams: Spearheaded Agile processes, improved QA workflows, and introduced technical best practices to enhance feature delivery and team collaboration.
+
+
+# Top Mention On Projects 
+
+Recently built - News70
+Product Overview
+News70 is an AI-powered news summarization tool that distills lengthy news articles into concise, informative 70-word summaries. The application uses advanced natural language processing to capture and preserve the essential information from any news article while eliminating unnecessary content.
+Core Functionality
+AI-Powered Summarization
+Smart Content Extraction: Automatically identifies and extracts the most critical information from news articles
+Structured Summarization: Preserves key facts, subjects, statistical data, quotes, dates, and figures
+Length Optimization: Consistently delivers summaries in approximately 70 words, making content digestible at a glance
+User Experience
+Dual Input Methods: Accepts both direct text input and URL links (URL functionality coming soon)
+Responsive Design: Fully adaptive interface that works seamlessly across all device sizes
+Elegant Animation: Implements sophisticated Framer Motion animations for a polished, professional feel
+Interactive Feedback: Provides immediate visual feedback through hover effects, loading states, and transitions
+Technical Implementation
+Frontend Architecture
+Built with Next.js for optimal performance and SEO benefits
+Utilizes React hooks for efficient state management
+Implements component-based architecture for modularity and reusability
+AI Integration
+Custom-engineered prompt engineering for consistent, high-quality summaries
+Structured API responses that ensure reliable formatting of AI outputs
+Fine-tuned natural language processing that maintains the original context and meaning
+UX Enhancements
+Intelligent error handling that preserves user input during failures
+Animated loading states that provide visual feedback during processing
+Glass-morphism design elements creating a modern, sophisticated aesthetic
+AI Skills Demonstrated
+Prompt Engineering: Crafted precise prompts to generate consistently valuable summaries
+Natural Language Processing: Implemented algorithms that understand and prioritize content based on importance
+Content Extraction: Developed systems that identify and preserve essential information while eliminating redundancy
+Structured Output Generation: Created frameworks that ensure AI responses follow consistent, usable formats
+Error Handling for AI Systems: Built robust feedback loops to handle edge cases in AI processing
+
+
