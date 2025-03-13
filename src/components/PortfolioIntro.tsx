@@ -113,10 +113,13 @@ const PortfolioIntro = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.7, duration: 0.5 }}
-              className="my-6"
+              className="my-6 flex flex-col sm:flex-row gap-4"
             >
               <Link href="/chat">
                 <PulsatingButton>Start the Conversation</PulsatingButton>
+              </Link>
+              <Link href="/resume-generator">
+                <PulsatingButton>Resume Generator</PulsatingButton>
               </Link>
             </motion.div>
           </motion.div>

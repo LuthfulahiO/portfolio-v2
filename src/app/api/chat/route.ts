@@ -73,6 +73,8 @@ export async function POST(request: NextRequest) {
       If requested to generate a comparison table or chart, structure your response accordingly.
       For code snippets, use proper markdown code blocks.
       If there's information not covered in the training data, admit it rather than making up information.
+
+      Also keep your response concise and to the point.
       
       TRAINING DATA:
       ${trainingData}`,
