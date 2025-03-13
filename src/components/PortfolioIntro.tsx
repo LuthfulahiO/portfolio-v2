@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "motion/react";
-import { PulsatingButton } from "./magicui/pulsating-button";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 const portfolioAscii = `
 ██      ██    ██ ████████ ██   ██ ███████ ██    ██ ██       █████  ██   ██ ██ 
@@ -26,22 +26,31 @@ const PortfolioIntro = () => {
         <div className="flex flex-row gap-x-2 items-center">
           <Link href="/" className="group relative">
             <div className="h-3 w-3 rounded-full bg-red-500 hover:bg-red-400 transition-colors cursor-pointer flex items-center justify-center">
-              <span className="absolute invisible group-hover:visible whitespace-nowrap bg-background border border-border rounded px-2 py-1 text-xs left-0 top-5 z-10">Home</span>
+              <span className="absolute invisible group-hover:visible whitespace-nowrap bg-background border border-border rounded px-2 py-1 text-xs left-0 top-5 z-10">
+                Home
+              </span>
             </div>
           </Link>
           <Link href="/resume-generator" className="group relative">
             <div className="h-3 w-3 rounded-full bg-yellow-500 hover:bg-yellow-400 transition-colors cursor-pointer">
-              <span className="absolute invisible group-hover:visible whitespace-nowrap bg-background border border-border rounded px-2 py-1 text-xs left-0 top-5 z-10">Resume Generator</span>
+              <span className="absolute invisible group-hover:visible whitespace-nowrap bg-background border border-border rounded px-2 py-1 text-xs left-0 top-5 z-10">
+                Resume Generator
+              </span>
             </div>
           </Link>
           <Link href="/chat" className="group relative">
             <div className="h-3 w-3 rounded-full bg-green-500 hover:bg-green-400 transition-colors cursor-pointer">
-              <span className="absolute invisible group-hover:visible whitespace-nowrap bg-background border border-border rounded px-2 py-1 text-xs left-0 top-5 z-10">Chat</span>
+              <span className="absolute invisible group-hover:visible whitespace-nowrap bg-background border border-border rounded px-2 py-1 text-xs left-0 top-5 z-10">
+                Chat
+              </span>
             </div>
           </Link>
         </div>
         <div className="flex items-center">
-          <Link href="/" className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link
+            href="/"
+            className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
             <span>Back to Home</span>
           </Link>
         </div>
@@ -57,7 +66,7 @@ const PortfolioIntro = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <pre className="font-normal text-primary text-xs lg:text-base mb-6">
+            <pre className="font-normal text-primary text-[0.35rem] lg:text-base mb-6">
               {portfolioAscii}
             </pre>
 
@@ -133,10 +142,10 @@ const PortfolioIntro = () => {
               className="my-6 flex flex-col sm:flex-row gap-4"
             >
               <Link href="/chat">
-                <PulsatingButton>Start the Conversation</PulsatingButton>
+                <Button>Start the Conversation</Button>
               </Link>
               <Link href="/resume-generator">
-                <PulsatingButton>Resume Generator</PulsatingButton>
+                <Button>Resume Generator</Button>
               </Link>
             </motion.div>
           </motion.div>

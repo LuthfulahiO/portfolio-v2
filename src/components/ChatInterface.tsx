@@ -163,27 +163,40 @@ const ChatInterface = () => {
       <form
         onSubmit={handleSubmit}
         className="flex items-end rounded-lg border border-border p-2"
+        onKeyDown={(e) => {
+          if (e.key === "Enter" && !e.shiftKey) {
+            // Prevent form submission on Enter
+            e.preventDefault();
+          }
+        }}
       >
-        <textarea
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={(e) => {
-            // Only submit when pressing Enter without shift key
-            if (e.key === 'Enter' && !e.shiftKey) {
-              e.preventDefault();
-              if (input.trim()) handleSubmit(e);
-            }
-            // Allow new line when pressing Shift+Enter
-            if (e.key === 'Enter' && e.shiftKey) {
-              // Default behavior creates new line
-            }
-          }}
-          placeholder="Ask me anything about Luthfulahi... (Shift+Enter for new line)"
-          className="flex-1 bg-transparent outline-none px-2 resize-none min-h-[40px] max-h-[150px] overflow-y-auto"
-          disabled={isLoading}
-          rows={1}
-          style={{ height: 'auto' }}
-        />
+        <div className="relative flex-1">
+          <textarea
+            value={input}
+            onChange={(e) => {
+              setInput(e.target.value);
+              // Auto-resize the textarea
+              e.target.style.height = "44px";
+              const newHeight = Math.min(e.target.scrollHeight, 250);
+              e.target.style.height = `${newHeight}px`;
+            }}
+            onKeyDown={(e) => {
+              // Only submit when pressing Enter without shift key
+              if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault();
+                if (input.trim()) handleSubmit(e);
+              }
+              // Allow new line when pressing Shift+Enter
+              if (e.key === "Enter" && e.shiftKey) {
+                // Default behavior creates new line
+              }
+            }}
+            placeholder="Ask me anything about Luthfulahi... (Shift+Enter for new line)"
+            className="w-full bg-transparent outline-none px-2 resize-none overflow-y-auto min-h-[44px] max-h-[250px]"
+            disabled={isLoading}
+            rows={1}
+          />
+        </div>
         <button
           type="submit"
           className="p-2 rounded-lg bg-primary text-primary-foreground disabled:opacity-50 ml-2"
