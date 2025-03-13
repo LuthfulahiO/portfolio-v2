@@ -11,9 +11,21 @@ export default function ChatPage() {
       {/* Terminal Header */}
       <div className="flex justify-between border-b border-border px-4 h-10 items-center">
         <div className="flex flex-row gap-x-2 items-center">
-          <div className="h-2 w-2 rounded-full bg-red-500"></div>
-          <div className="h-2 w-2 rounded-full bg-yellow-500"></div>
-          <div className="h-2 w-2 rounded-full bg-green-500"></div>
+          <Link href="/" className="group relative">
+            <div className="h-3 w-3 rounded-full bg-red-500 hover:bg-red-400 transition-colors cursor-pointer flex items-center justify-center">
+              <span className="absolute invisible group-hover:visible whitespace-nowrap bg-background border border-border rounded px-2 py-1 text-xs left-0 top-5 z-10">Home</span>
+            </div>
+          </Link>
+          <Link href="/resume-generator" className="group relative">
+            <div className="h-3 w-3 rounded-full bg-yellow-500 hover:bg-yellow-400 transition-colors cursor-pointer">
+              <span className="absolute invisible group-hover:visible whitespace-nowrap bg-background border border-border rounded px-2 py-1 text-xs left-0 top-5 z-10">Resume Generator</span>
+            </div>
+          </Link>
+          <Link href="/chat" className="group relative">
+            <div className="h-3 w-3 rounded-full bg-green-500 hover:bg-green-400 transition-colors cursor-pointer">
+              <span className="absolute invisible group-hover:visible whitespace-nowrap bg-background border border-border rounded px-2 py-1 text-xs left-0 top-5 z-10">Chat</span>
+            </div>
+          </Link>
         </div>
         <div className="flex items-center gap-4">
           <Link 
@@ -21,7 +33,7 @@ export default function ChatPage() {
             className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />
-            <span>Back to Intro</span>
+            <span>Back to Home</span>
           </Link>
           <Link 
             href="/api/resume"
