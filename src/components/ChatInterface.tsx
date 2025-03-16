@@ -4,6 +4,9 @@ import { useState, useRef, useEffect } from "react";
 import { Send } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { Loader2 } from "lucide-react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 type Message = {
   role: "user" | "assistant";
@@ -17,6 +20,7 @@ type Message = {
 };
 
 const ChatInterface = () => {
+  const isMobile = useIsMobile();
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
@@ -132,7 +136,11 @@ const ChatInterface = () => {
               <code>{message.content}</code>
             </pre>
           ) : (
-            <div className="whitespace-pre-wrap">{message.content}</div>
+            <div className="prose prose-sm dark:prose-invert max-w-none overflow-auto markdown-content">
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {message.content}
+              </ReactMarkdown>
+            </div>
           )}
         </div>
       </motion.div>
@@ -141,7 +149,7 @@ const ChatInterface = () => {
 
   return (
     <div className="flex flex-col h-[calc(100vh-6rem)] max-w-4xl mx-auto pt-4 px-4">
-      <div className="flex-1 overflow-y-auto mb-4 px-2">
+      <div className="flex-1 overflow-y-auto mb-4 px-2 hide-scrollbar">
         <AnimatePresence>
           {messages.map((message, index) => renderMessage(message, index))}
         </AnimatePresence>
@@ -159,6 +167,16 @@ const ChatInterface = () => {
         )}
         <div ref={messagesEndRef} />
       </div>
+
+      {messages.length > 4 ? null : (
+        <div className="mb-2 text-xs text-muted-foreground px-1">
+          <span>
+            💡 Tip: You can paste a job description and ask questions like
+            &ldquo;His he a good fit for this role?&rdquo; or &ldquo;What are
+            his strengths and weaknesses?&rdquo;
+          </span>
+        </div>
+      )}
 
       <form
         onSubmit={handleSubmit}
@@ -191,8 +209,12 @@ const ChatInterface = () => {
                 // Default behavior creates new line
               }
             }}
-            placeholder="Ask me anything about Luthfulahi... (Shift+Enter for new line)"
-            className="w-full bg-transparent outline-none px-2 resize-none overflow-y-auto min-h-[44px] max-h-[250px]"
+            placeholder={
+              isMobile
+                ? "Ask me anything about Luthfulahi..."
+                : "Ask me anything about Luthfulahi... (Shift+Enter for new line)"
+            }
+            className="w-full bg-transparent outline-none px-2 resize-none overflow-y-auto hide-scrollbar min-h-[44px] max-h-[250px]"
             disabled={isLoading}
             rows={1}
           />
