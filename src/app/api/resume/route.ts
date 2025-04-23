@@ -5,8 +5,13 @@ import fs from "fs";
 export async function GET() {
   try {
     // Default resume path (standard resume)
-    const resumePath = path.join(process.cwd(), "public", "training_data", "resume.pdf");
-    
+    const resumePath = path.join(
+      process.cwd(),
+      "public",
+      "training_data",
+      "resume_fs.pdf"
+    );
+
     // Read the resume file
     const resumeBuffer = fs.readFileSync(resumePath);
 
