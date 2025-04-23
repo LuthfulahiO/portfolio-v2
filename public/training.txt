@@ -29,6 +29,14 @@ Accessibility: WCAG Guidelines, Assistive Technologies, Accessible Rich Internet
 Leadership: Team lead, Startup founding team, Strategic Planning, Project Management, Cross-functional Collaboration,
 Mentorship
 RELEVANT EXPERIENCE
+Fuze.us Dubai, United Arab Emirates
+Senior Software Engineer October 2024 - Present
+• Delivered MVP for ProShop golf app 1 month ahead of schedule, as a full-stack engineer working with Node.js, express.js,
+Postgresql, AWS, React, Next.js, and TypeScript.
+• Managed full deployment pipeline with AWS, Github Actions, Kubernetes, AgroCD and Docker.
+• Spearheaded sprint planning and stakeholder alignment, ensuring delivery consistency across cross-functional teams.
+• Championed code quality via peer reviews, technical documentation, and scalable UI patterns using Styled Components.
+
 Lead Frontend Engineer, Blockradar.co May 2024 - Present
 ●
 Led the team to architect and develop a non-custodial stablecoin wallet infrastructure dashboard using Next.js, React, and
