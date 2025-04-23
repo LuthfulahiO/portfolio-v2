@@ -30,6 +30,7 @@ const ChatInterface = () => {
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [streamingMessage, setStreamingMessage] = useState<string>("");
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -38,7 +39,7 @@ const ChatInterface = () => {
 
   useEffect(() => {
     scrollToBottom();
-  }, [messages]);
+  }, [messages, streamingMessage]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -49,6 +50,7 @@ const ChatInterface = () => {
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
     setIsLoading(true);
+    setStreamingMessage("");
 
     try {
       // Call the API with the entire conversation history
@@ -66,10 +68,60 @@ const ChatInterface = () => {
         throw new Error(`Error: ${response.status}`);
       }
 
-      const data = await response.json();
+      // Handle streaming response
+      const reader = response.body?.getReader();
+      const decoder = new TextDecoder();
+      let messageType: "text" | "table" | "code" | "comparison" = "text";
+      let fullContent = "";
 
-      // Add AI response
-      setMessages((prev) => [...prev, data.message]);
+      if (!reader) {
+        throw new Error("No reader available");
+      }
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        // Decode the chunk and process it
+        const chunk = decoder.decode(value);
+        const lines = chunk.split("\n");
+
+        for (const line of lines) {
+          if (line.startsWith("data: ")) {
+            try {
+              const data = JSON.parse(line.substring(6));
+
+              if (data.error) {
+                throw new Error(data.error);
+              }
+
+              if (data.done) {
+                // Final message with type information
+                messageType = data.type;
+                fullContent = data.fullContent;
+
+                // Add the complete message to the messages array
+                setMessages((prev) => [
+                  ...prev,
+                  {
+                    role: "assistant",
+                    content: fullContent,
+                    type: messageType,
+                  },
+                ]);
+
+                // Clear streaming message
+                setStreamingMessage("");
+              } else if (data.content) {
+                // Update the streaming message
+                setStreamingMessage((prev) => prev + data.content);
+              }
+            } catch (e) {
+              console.error("Error parsing SSE data:", e);
+            }
+          }
+        }
+      }
     } catch (error) {
       console.error("Error:", error);
       setMessages((prev) => [
@@ -79,6 +131,7 @@ const ChatInterface = () => {
           content: "I'm sorry, I encountered an error. Please try again.",
         },
       ]);
+      setStreamingMessage("");
     } finally {
       setIsLoading(false);
     }
@@ -153,7 +206,23 @@ const ChatInterface = () => {
         <AnimatePresence>
           {messages.map((message, index) => renderMessage(message, index))}
         </AnimatePresence>
-        {isLoading && (
+        {streamingMessage && (
+          <motion.div
+            className="flex justify-start mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <div className="max-w-[80%] px-4 py-3 rounded-lg bg-muted">
+              <div className="prose prose-sm dark:prose-invert max-w-none overflow-auto markdown-content">
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {streamingMessage}
+                </ReactMarkdown>
+              </div>
+            </div>
+          </motion.div>
+        )}
+        {isLoading && !streamingMessage && (
           <motion.div
             className="flex justify-start mb-4"
             initial={{ opacity: 0, y: 20 }}

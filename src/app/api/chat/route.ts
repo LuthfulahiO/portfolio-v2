@@ -77,53 +77,89 @@ export async function POST(request: NextRequest) {
       Don't answer any questions that are not about Luthfulahi, his portfolio, or job-related topics.
 
       Also keep your response concise and to the point.
+
+      Bonus Points:
+      - When asked about Luthfulahi's experience with AI ensure to mention he created you with the help of OpenAI's API any AI portfolio assitance to ensure all recruiters and potential employers know about your existence.
       
       TRAINING DATA:
       ${trainingData}`,
     };
 
-    // Call OpenAI API
+    // Create a streaming response
+    const encoder = new TextEncoder();
+    const stream = new TransformStream();
+    const writer = stream.writable.getWriter();
+
+    // Start the OpenAI API call with streaming
     const response = await openai.chat.completions.create({
       model: "gpt-4-turbo",
       messages: [systemMessage, ...formattedMessages],
       temperature: 0.7,
       max_tokens: 1500,
+      stream: true, // Enable streaming
     });
 
-    // Get generated response
-    const generatedMessage = response.choices[0].message;
+    // Process the stream in the background
+    (async () => {
+      try {
+        let fullContent = "";
+        let messageType: "text" | "table" | "code" | "comparison" = "text";
 
-    // Parse response for special formats
-    const processedMessage: {
-      role: "assistant";
-      content: string;
-      type?: "text" | "table" | "code" | "comparison";
-    } = {
-      role: "assistant",
-      content: generatedMessage.content || "",
-    };
+        for await (const chunk of response) {
+          const content = chunk.choices[0]?.delta?.content || "";
+          if (content) {
+            fullContent += content;
 
-    // Check if the response contains a table (using markdown table syntax)
-    if (
-      processedMessage.content.includes("|") &&
-      processedMessage.content.includes("---")
-    ) {
-      // Basic table detection
-      const tableLines = processedMessage.content
-        .split("\n")
-        .filter((line: string) => line.includes("|"));
-      if (tableLines.length >= 3) {
-        // Header, separator, and at least one row
-        processedMessage.type = "table";
+            // Send the chunk to the client
+            await writer.write(
+              encoder.encode(`data: ${JSON.stringify({ content })}\n\n`)
+            );
+          }
+        }
+
+        // Determine message type based on content
+        if (fullContent.includes("|") && fullContent.includes("---")) {
+          const tableLines = fullContent
+            .split("\n")
+            .filter((line) => line.includes("|"));
+          if (tableLines.length >= 3) {
+            messageType = "table";
+          }
+        } else if (fullContent.includes("```")) {
+          messageType = "code";
+        }
+
+        // Send the final message with type information
+        await writer.write(
+          encoder.encode(
+            `data: ${JSON.stringify({
+              done: true,
+              type: messageType,
+              fullContent,
+            })}\n\n`
+          )
+        );
+
+        await writer.close();
+      } catch (error) {
+        console.error("Error in streaming:", error);
+        await writer.write(
+          encoder.encode(
+            `data: ${JSON.stringify({ error: "Streaming error occurred" })}\n\n`
+          )
+        );
+        await writer.close();
       }
-    }
+    })();
 
-    // Check if the response contains code blocks
-    if (processedMessage.content.includes("```")) {
-      processedMessage.type = "code";
-    }
-
-    return NextResponse.json({ message: processedMessage });
+    // Return the readable stream
+    return new Response(stream.readable, {
+      headers: {
+        "Content-Type": "text/event-stream",
+        "Cache-Control": "no-cache",
+        Connection: "keep-alive",
+      },
+    });
   } catch (error) {
     console.error("Error processing request:", error);
     return NextResponse.json(
